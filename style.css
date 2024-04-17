@@ -1,0 +1,111 @@
+
+
+body {
+    font-family: 'Open Sans' !important;font-size: 22px;
+}
+.text-shadow  {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+header,
+footer,
+section {
+    padding: 100px 80px;
+}
+
+p {font-size: 1.6rem !important; font-weight: 10 !important;}
+h1 {font-size: 6rem !important; font-weight: bold !important;}
+h2 {font-size: 2.9rem !important; font-weight: 900 !important;}
+@media (max-width: 768px) {
+    h1 {font-size: 4rem !important;}
+     }
+  
+
+header {
+    padding: 100px 0;
+}
+
+
+.background video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw !important;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+  }
+
+  
+  .background {
+    position: relative;
+    overflow: hidden;
+    height: 955px !important; /* Вы можете настроить высоту под свои нужды */
+  }
+
+  .res1 {height: 554px !important;}
+  .res {width: 606px !important; height:452px !important; border-radius: 20px; display: block;
+    margin-left: auto;
+    margin-top: 50px !important;
+    margin-right: auto; 
+    background-image: url("soc.png");}
+
+    .text-center-al {  display: flex;
+        justify-content: center;
+        align-items: center;}
+        @media (max-width: 1291px) {
+            .res2 {margin-top: 250px !important;}
+             }
+    .brr {border-radius: 20px !important;}
+
+    img {width: 100%; height: auto;}
+    
+  .scroll {
+    /* Стилизация полосы прокрутки для всей страницы */
+    ::-webkit-scrollbar {
+        width: 5px; /* ширина полосы прокрутки */
+        height: 5px; /* высота горизонтальной полосы прокрутки */
+    }
+    
+    /* Стилизация дорожки полосы прокрутки */
+    ::-webkit-scrollbar-track {
+        background: transparent; /* или любой цвет фона */
+    }
+    
+    /* Стилизация самого ползунка полосы прокрутки */
+    ::-webkit-scrollbar-thumb {
+        background: #000000; /* цвет ползунка */
+    }
+    
+    /* Стилизация ползунка при наведении */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff; /* цвет ползунка при наведении */
+    }
+    }
+
+    .form-control:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    
+        
+        /* Убираем границы и добавляем нижнюю линию для полей ввода и текстовой области */
+        .form-control {
+          border: none; /* Убираем границы */
+          border-bottom: 1px solid #EDD289; /* Добавляем нижнюю границу, цвет можно поменять */
+          border-radius: 0; /* Убираем скругление, если оно есть */
+        }
+      
+        /* Стиль для фокуса на элементах ввода */
+        .form-control:focus {
+          outline: none; /* Убираем контур при фокусе */
+          border-bottom: 2px solid #EDD289; /* Добавляем более заметную нижнюю границу при фокусе */
+        }
+      
+        /* Опционально: Можете задать фон для полей ввода, если это необходимо */
+        .form-control {
+          background-color: transparent; /* Делаем фон поля ввода прозрачным */
+        }
+        
+        
