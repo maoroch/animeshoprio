@@ -109,3 +109,23 @@ header {
         }
         
         
+
+        body, html {
+          overflow-x: hidden;
+          overflow-y: scroll;
+          scrollbar-width: none; /* для Firefox */
+      }
+      body::-webkit-scrollbar { /* для WebKit-браузеров */
+          display: none;
+      }
+
+      /* Стилизация индикатора прокрутки */
+      .scroll-indicator {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 0%;
+          height: 4px;
+          background-color: #ff4800; /* цвет Bootstrap Primary */
+          z-index: 1030; /* чтобы быть поверх основных элементов */
+      }
