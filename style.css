@@ -41,7 +41,7 @@ header {
   .background {
     position: relative;
     overflow: hidden;
-    height: 955px !important; /* Вы можете настроить высоту под свои нужды */
+    height: 890px !important; /* Вы можете настроить высоту под свои нужды */
   }
 
   .res1 {height: 554px !important;}
@@ -129,3 +129,33 @@ header {
           background-color: #ff4800; /* цвет Bootstrap Primary */
           z-index: 1030; /* чтобы быть поверх основных элементов */
       }
+
+      .image-container {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        width: 100%;
+        transition: filter 0.3s ease;
+    }
+    
+    .image-container .centered-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+    
+    .image-container:hover img {
+        filter: blur(8px);
+    }
+    
+    .image-container:hover .centered-text {
+        opacity: 1;
+    }
